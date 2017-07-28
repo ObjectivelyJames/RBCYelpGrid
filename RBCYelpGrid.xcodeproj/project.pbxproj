@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B785C6E41F2831B90052F050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785C6E31F2831B90052F050 /* AppDelegate.swift */; };
+		B785C6E91F2831B90052F050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785C6E71F2831B90052F050 /* Main.storyboard */; };
+		B785C6EB1F2831B90052F050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B785C6EA1F2831B90052F050 /* Assets.xcassets */; };
+		B785C6EE1F2831B90052F050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785C6EC1F2831B90052F050 /* LaunchScreen.storyboard */; };
+		B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785C6F51F2835910052F050 /* RootYelpViewController.swift */; };
+		B786FC7F1F2984030085CE26 /* YLPClient+Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */; };
+		B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */; };
+		D45D455F845ECAA812984FC4 /* Pods_RBCYelpGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6A04B5413534AD4BE1B06C /* Pods_RBCYelpGrid.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E6A04B5413534AD4BE1B06C /* Pods_RBCYelpGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBCYelpGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A50EFFB7C259700AE50F64 /* Pods-RBCYelpGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBCYelpGrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBCYelpGrid/Pods-RBCYelpGrid.debug.xcconfig"; sourceTree = "<group>"; };
+		B77197A13D794EA931041962 /* Pods-RBCYelpGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBCYelpGrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBCYelpGrid/Pods-RBCYelpGrid.release.xcconfig"; sourceTree = "<group>"; };
+		B785C6E01F2831B90052F050 /* RBCYelpGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBCYelpGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B785C6E31F2831B90052F050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B785C6E81F2831B90052F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B785C6EA1F2831B90052F050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B785C6ED1F2831B90052F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B785C6EF1F2831B90052F050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B785C6F51F2835910052F050 /* RootYelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootYelpViewController.swift; sourceTree = "<group>"; };
+		B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "YLPClient+Futures.swift"; path = "/Users/jameslarcombe/Downloads/yelp-fusion-master/fusion/swift/YelpAPISample/YLPClient+Futures.swift"; sourceTree = "<absolute>"; };
+		B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardYelpCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B785C6DD1F2831B90052F050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45D455F845ECAA812984FC4 /* Pods_RBCYelpGrid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213E06F0EADD7A2BE47ECE79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A50EFFB7C259700AE50F64 /* Pods-RBCYelpGrid.debug.xcconfig */,
+				B77197A13D794EA931041962 /* Pods-RBCYelpGrid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B785C6D71F2831B90052F050 = {
+			isa = PBXGroup;
+			children = (
+				B785C6E21F2831B90052F050 /* RBCYelpGrid */,
+				B785C6E11F2831B90052F050 /* Products */,
+				213E06F0EADD7A2BE47ECE79 /* Pods */,
+				C30170A96DCD42DECA5D7FDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B785C6E11F2831B90052F050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B785C6E01F2831B90052F050 /* RBCYelpGrid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B785C6E21F2831B90052F050 /* RBCYelpGrid */ = {
+			isa = PBXGroup;
+			children = (
+				B786FC841F2999950085CE26 /* External */,
+				B786FC811F2988C00085CE26 /* ReusableViews */,
+				B786FC801F2988B00085CE26 /* ViewControllers */,
+				B785C6E31F2831B90052F050 /* AppDelegate.swift */,
+				B785C6E71F2831B90052F050 /* Main.storyboard */,
+				B785C6EA1F2831B90052F050 /* Assets.xcassets */,
+				B785C6EC1F2831B90052F050 /* LaunchScreen.storyboard */,
+				B785C6EF1F2831B90052F050 /* Info.plist */,
+			);
+			path = RBCYelpGrid;
+			sourceTree = "<group>";
+		};
+		B786FC801F2988B00085CE26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B785C6F51F2835910052F050 /* RootYelpViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B786FC811F2988C00085CE26 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */,
+			);
+			name = ReusableViews;
+			sourceTree = "<group>";
+		};
+		B786FC841F2999950085CE26 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		C30170A96DCD42DECA5D7FDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E6A04B5413534AD4BE1B06C /* Pods_RBCYelpGrid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B785C6DF1F2831B90052F050 /* RBCYelpGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B785C6F21F2831B90052F050 /* Build configuration list for PBXNativeTarget "RBCYelpGrid" */;
+			buildPhases = (
+				866AC683CA5D1A08BDACDE65 /* [CP] Check Pods Manifest.lock */,
+				B785C6DC1F2831B90052F050 /* Sources */,
+				B785C6DD1F2831B90052F050 /* Frameworks */,
+				B785C6DE1F2831B90052F050 /* Resources */,
+				A5A6CBE027B7DCC6F4088396 /* [CP] Embed Pods Frameworks */,
+				C80655544E19A414F294D74B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBCYelpGrid;
+			productName = RBCYelpGrid;
+			productReference = B785C6E01F2831B90052F050 /* RBCYelpGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B785C6D81F2831B90052F050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = widgetco;
+				TargetAttributes = {
+					B785C6DF1F2831B90052F050 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7BB6LN9A74;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B785C6DB1F2831B90052F050 /* Build configuration list for PBXProject "RBCYelpGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B785C6D71F2831B90052F050;
+			productRefGroup = B785C6E11F2831B90052F050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B785C6DF1F2831B90052F050 /* RBCYelpGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B785C6DE1F2831B90052F050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B785C6EE1F2831B90052F050 /* LaunchScreen.storyboard in Resources */,
+				B785C6EB1F2831B90052F050 /* Assets.xcassets in Resources */,
+				B785C6E91F2831B90052F050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		866AC683CA5D1A08BDACDE65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A6CBE027B7DCC6F4088396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBCYelpGrid/Pods-RBCYelpGrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80655544E19A414F294D74B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBCYelpGrid/Pods-RBCYelpGrid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B785C6DC1F2831B90052F050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B786FC7F1F2984030085CE26 /* YLPClient+Futures.swift in Sources */,
+				B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */,
+				B785C6E41F2831B90052F050 /* AppDelegate.swift in Sources */,
+				B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B785C6E71F2831B90052F050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B785C6E81F2831B90052F050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B785C6EC1F2831B90052F050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B785C6ED1F2831B90052F050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B785C6F01F2831B90052F050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B785C6F11F2831B90052F050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B785C6F31F2831B90052F050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A50EFFB7C259700AE50F64 /* Pods-RBCYelpGrid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7BB6LN9A74;
+				INFOPLIST_FILE = RBCYelpGrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.widgetco.RBCYelpGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B785C6F41F2831B90052F050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77197A13D794EA931041962 /* Pods-RBCYelpGrid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7BB6LN9A74;
+				INFOPLIST_FILE = RBCYelpGrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.widgetco.RBCYelpGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B785C6DB1F2831B90052F050 /* Build configuration list for PBXProject "RBCYelpGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B785C6F01F2831B90052F050 /* Debug */,
+				B785C6F11F2831B90052F050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B785C6F21F2831B90052F050 /* Build configuration list for PBXNativeTarget "RBCYelpGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B785C6F31F2831B90052F050 /* Debug */,
+				B785C6F41F2831B90052F050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B785C6D81F2831B90052F050 /* Project object */;
+}
