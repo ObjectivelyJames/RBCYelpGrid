@@ -12,9 +12,9 @@
 		B785C6EB1F2831B90052F050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B785C6EA1F2831B90052F050 /* Assets.xcassets */; };
 		B785C6EE1F2831B90052F050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785C6EC1F2831B90052F050 /* LaunchScreen.storyboard */; };
 		B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785C6F51F2835910052F050 /* RootYelpViewController.swift */; };
-		B786FC7F1F2984030085CE26 /* YLPClient+Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */; };
 		B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */; };
 		B79F9C971F2ADA9E00266813 /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79F9C961F2ADA9E00266813 /* BusinessDetailViewController.swift */; };
+		B79F9C991F2B6D2300266813 /* YLPClient+Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79F9C981F2B6D2300266813 /* YLPClient+Futures.swift */; };
 		D45D455F845ECAA812984FC4 /* Pods_RBCYelpGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6A04B5413534AD4BE1B06C /* Pods_RBCYelpGrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +29,9 @@
 		B785C6ED1F2831B90052F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B785C6EF1F2831B90052F050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B785C6F51F2835910052F050 /* RootYelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootYelpViewController.swift; sourceTree = "<group>"; };
-		B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "YLPClient+Futures.swift"; path = "/Users/jameslarcombe/Downloads/yelp-fusion-master/fusion/swift/YelpAPISample/YLPClient+Futures.swift"; sourceTree = "<absolute>"; };
 		B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardYelpCollectionViewCell.swift; sourceTree = "<group>"; };
 		B79F9C961F2ADA9E00266813 /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
+		B79F9C981F2B6D2300266813 /* YLPClient+Futures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YLPClient+Futures.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		B786FC841F2999950085CE26 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */,
+				B79F9C981F2B6D2300266813 /* YLPClient+Futures.swift */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B786FC7F1F2984030085CE26 /* YLPClient+Futures.swift in Sources */,
 				B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */,
 				B785C6E41F2831B90052F050 /* AppDelegate.swift in Sources */,
+				B79F9C991F2B6D2300266813 /* YLPClient+Futures.swift in Sources */,
 				B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */,
 				B79F9C971F2ADA9E00266813 /* BusinessDetailViewController.swift in Sources */,
 			);
