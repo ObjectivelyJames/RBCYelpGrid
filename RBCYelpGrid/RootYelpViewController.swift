@@ -34,6 +34,7 @@ class RootYelpViewController: UIViewController, UICollectionViewDelegate, UIColl
         if let yelpCell = cell as? StandardYelpCollectionViewCell {
             yelpCell.businessLabel.text = businessesSet[indexPath.item].name
             yelpCell.addressLabel.text = businessesSet[indexPath.item].location.address[0]
+            yelpCell.businessImage.image = UIImage(named: "")
             asyncLoadImage(business: businessesSet[indexPath.item], imageView: yelpCell.businessImage)
             
         }
