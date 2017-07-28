@@ -18,8 +18,6 @@ class BusinessDetailViewController: UIViewController {
     
     @IBOutlet weak var businessAddress: UILabel!
     
-    @IBOutlet weak var recentReview: UILabel!
-    
     var business:YLPBusiness?
     
     override func viewDidLoad() {
