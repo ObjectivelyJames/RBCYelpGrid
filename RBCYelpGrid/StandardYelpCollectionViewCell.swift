@@ -11,5 +11,5 @@ import UIKit
 class StandardYelpCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var businessImage: UIImageView!
     @IBOutlet weak var businessLabel: UILabel!
-    
+    @IBOutlet weak var addressLabel: UILabel!
 }

@@ -20,9 +20,11 @@ class RootYelpViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var businesses: UICollectionView!
     @IBOutlet weak var term: UISearchBar!
+    @IBOutlet weak var searchPrompt: UILabel!
     var businessesSet = [YLPBusiness]()
  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        searchPrompt.isHidden = businessesSet.count > 0
         return businessesSet.count
     }
     
@@ -30,7 +32,9 @@ class RootYelpViewController: UIViewController, UICollectionViewDelegate, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StandardYelpCell", for: indexPath)
         if let yelpCell = cell as? StandardYelpCollectionViewCell {
             yelpCell.businessLabel.text = businessesSet[indexPath.item].name
+            yelpCell.addressLabel.text = businessesSet[indexPath.item].location.address[0]
             asyncLoadImage(business: businessesSet[indexPath.item], imageView: yelpCell.businessImage)
+            
         }
         return cell
     }
@@ -82,16 +86,15 @@ class RootYelpViewController: UIViewController, UICollectionViewDelegate, UIColl
         fetchItems()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? BusinessDetailViewController,
+            let cell = sender as? UICollectionViewCell {
+            if let indexPath = businesses.indexPath(for: cell) {
+                destination.business = businessesSet[indexPath.item]
+            }
+        }
     }
-    */
-    
+
     @IBAction func ascending(_ sender: UIBarButtonItem) {
         sortBusinesses(sortOrientation: .ascending)
     }
@@ -99,21 +102,21 @@ class RootYelpViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBAction func descending(_ sender: UIBarButtonItem) {
         sortBusinesses(sortOrientation: .descending)
     }
-   
-    func asyncLoadImage(business:YLPBusiness,imageView:UIImageView){
-        let downloadQueue = DispatchQueue(label: "com.widgetco.RBCYelpGrid.AsyncImageQueue")
-        if let imageUrl = business.imageURL {
-            downloadQueue.async(){
-                do {
-                    let data = try Data.init(contentsOf: imageUrl)
-                    var image:UIImage?
-                    image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        imageView.image = image
-                    }
-                } catch {
-                    print("Error in image retreaval")
+}
+
+func asyncLoadImage(business:YLPBusiness,imageView:UIImageView){
+    let downloadQueue = DispatchQueue(label: "com.widgetco.RBCYelpGrid.AsyncImageQueue")
+    if let imageUrl = business.imageURL {
+        downloadQueue.async(){
+            do {
+                let data = try Data.init(contentsOf: imageUrl)
+                var image:UIImage?
+                image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    imageView.image = image
                 }
+            } catch {
+                print("Error in image retreaval")
             }
         }
     }

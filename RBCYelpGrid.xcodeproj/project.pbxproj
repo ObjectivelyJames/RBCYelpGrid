@@ -14,6 +14,7 @@
 		B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785C6F51F2835910052F050 /* RootYelpViewController.swift */; };
 		B786FC7F1F2984030085CE26 /* YLPClient+Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */; };
 		B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */; };
+		B79F9C971F2ADA9E00266813 /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79F9C961F2ADA9E00266813 /* BusinessDetailViewController.swift */; };
 		D45D455F845ECAA812984FC4 /* Pods_RBCYelpGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6A04B5413534AD4BE1B06C /* Pods_RBCYelpGrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		B785C6F51F2835910052F050 /* RootYelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootYelpViewController.swift; sourceTree = "<group>"; };
 		B786FC7E1F2984030085CE26 /* YLPClient+Futures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "YLPClient+Futures.swift"; path = "/Users/jameslarcombe/Downloads/yelp-fusion-master/fusion/swift/YelpAPISample/YLPClient+Futures.swift"; sourceTree = "<absolute>"; };
 		B786FC821F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardYelpCollectionViewCell.swift; sourceTree = "<group>"; };
+		B79F9C961F2ADA9E00266813 /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B785C6F51F2835910052F050 /* RootYelpViewController.swift */,
+				B79F9C961F2ADA9E00266813 /* BusinessDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				B786FC831F2988FE0085CE26 /* StandardYelpCollectionViewCell.swift in Sources */,
 				B785C6E41F2831B90052F050 /* AppDelegate.swift in Sources */,
 				B785C6F61F2835910052F050 /* RootYelpViewController.swift in Sources */,
+				B79F9C971F2ADA9E00266813 /* BusinessDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
