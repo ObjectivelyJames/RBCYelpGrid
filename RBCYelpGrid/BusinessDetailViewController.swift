@@ -15,7 +15,6 @@ class BusinessDetailViewController: UIViewController {
 
     @IBOutlet weak var businessImage: UIImageView!
     @IBOutlet weak var businessName: UILabel!
-    
     @IBOutlet weak var businessAddress: UILabel!
     
     var business:YLPBusiness?

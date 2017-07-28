@@ -16,11 +16,12 @@ enum AlphabeticSortType {
 
 class RootYelpViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate  {
     
-    var searching = false
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var businesses: UICollectionView!
     @IBOutlet weak var term: UISearchBar!
     @IBOutlet weak var searchPrompt: UILabel!
+    
+    var searching = false
     var businessesSet = [YLPBusiness]()
  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
